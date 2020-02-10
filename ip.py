@@ -12,8 +12,7 @@ for i in range(len(array)):
 Dict = {}
 for i in range(len(ip_addresses)):
     if str(ip_addresses[i]) not in Dict:
-        Dict.update( { ip_addresses[i]: 0 } )
-        Dict[ip_addresses[i]] += 1
+        Dict.update( { ip_addresses[i]: 1 } )
     else:
         Dict[ip_addresses[i]] += 1
 
